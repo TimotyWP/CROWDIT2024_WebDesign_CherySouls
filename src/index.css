@@ -138,3 +138,124 @@
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
 }
+
+
+/* src/App.css or src/index.css */
+.subscription-card {
+  background: linear-gradient(to right, #06beb6, #48b1bf);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+.subscription-card img {
+  width: 4rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  background: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+
+.subscription-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.subscription-card p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.subscription-card button {
+  background: #007bff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.subscription-card button:hover {
+  background: #0056b3;
+}
+
+/* src/App.css or src/index.css */
+.flash-message {
+  position: fixed;
+  bottom: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.flash-message img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.flash-message p {
+  margin: 0;
+  color: #38a169; /* Warna hijau */
+  font-weight: 600;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.subscription-card {
+  background: linear-gradient(to right, #06beb6, #48b1bf);
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.subscription-card:hover {
+  transform: scale(1.05);
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+  max-width: 500px;
+  margin: auto;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1000;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
